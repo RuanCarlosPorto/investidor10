@@ -14,15 +14,15 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         Categories::factory()->create([
-            'name' => 'Sports',
+            'name' => 'Esportes',
         ]);
         
         Categories::factory()->create([
-            'name' => 'Technology',
+            'name' => 'Tecnologia',
         ]);
         
         Categories::factory()->create([
-            'name' => 'Politics',
+            'name' => 'Politica',
         ]);
     }
 }

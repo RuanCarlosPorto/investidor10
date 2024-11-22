@@ -1,5 +1,5 @@
 <div class="search-input">
-  <input type="text" name="{{$name}}"/>
+  <input type="text" name="{{$name}}" value="{{$value ?? ''}}"/>
   <img src="/icons/search-icon.svg" alt="Pesquisar" class="icon">
 </div>
 

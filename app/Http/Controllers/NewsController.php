@@ -45,6 +45,7 @@ class NewsController extends Controller
         ]);
 
         $this->newsRepository->create($request->all());
-        return $this->indexView();
+
+        return $this->indexView($request);
     }
 }
