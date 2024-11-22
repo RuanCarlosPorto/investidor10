@@ -4,7 +4,7 @@
         <a href="{{ route('news.create.view') }}">Cadastrar Noticias</a>
         <a href="{{ route('about') }}">About</a>
         <form action="{{ route('home') }}" method="GET">
-            <x-forms.search-input name="search" :value="$_GET['search']"/>
+            <x-forms.search-input name="search" :value="isset($_GET['search']) ? $_GET['search'] : ''"/>
         </form>
     </div>
 </div>
